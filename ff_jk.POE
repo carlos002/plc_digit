@@ -1,0 +1,111 @@
+FUNCTION_BLOCK ff_jk
+VAR_EXTERNAL
+
+END_VAR
+
+VAR_INPUT
+my_ff_j	: bool;
+my_ff_k	: bool;
+my_clk : bool r_edge;
+END_VAR
+
+VAR_OUTPUT
+my_ff_q	: bool;
+END_VAR
+
+VAR
+
+END_VAR
+
+(*Automatically declared*)
+VAR_EXTERNAL
+END_VAR
+(** if (my_clk) then **)
+	(* if - Cond *)
+	LD my_clk
+	JMPCN ODK_SKIP_000000000000001_000000000000001
+
+		(* then - Stmts *)
+
+(** if (my_ff_j & my_ff_k) then **)
+		(* if - Cond *)
+		LD my_ff_j
+		AND my_ff_k
+		JMPCN ODK_SKIP_000000000000002_000000000000001
+
+			(* then - Stmts *)
+
+(** 	my_ff_q := not my_ff_q;				{* Toggle *} **)
+			(* assign - Stmt *)
+			LD my_ff_q
+			NOT
+			ST my_ff_q
+
+			JMP ODK_END_IF_000000000000002
+
+(** else if (not my_ff_j & my_ff_k) then **)
+		(* else *) 
+		ODK_SKIP_000000000000002_000000000000001:
+
+			(* else - Stmts *)
+
+			(* if - Cond *)
+			LD my_ff_j
+			NOT
+			AND my_ff_k
+			JMPCN ODK_SKIP_000000000000003_000000000000001
+
+				(* then - Stmts *)
+
+(** 	my_ff_q := false;					{* Reset *} **)
+				(* assign - Stmt *)
+				LD false
+				ST my_ff_q
+
+				JMP ODK_END_IF_000000000000003
+
+(** else if (my_ff_j & not my_ff_k) then **)
+			(* else *) 
+			ODK_SKIP_000000000000003_000000000000001:
+
+				(* else - Stmts *)
+
+				(* if - Cond *)
+				LD my_ff_j
+				AND ( my_ff_k
+					NOT
+				)
+				JMPCN ODK_SKIP_000000000000004_000000000000001
+
+					(* then - Stmts *)
+
+(** 	my_ff_q := true;					{* Set *} **)
+					(* assign - Stmt *)
+					LD true
+					ST my_ff_q
+
+					JMP ODK_END_IF_000000000000004
+
+(** end_if; **)
+				(* if - End *) 
+				ODK_SKIP_000000000000004_000000000000001:
+				ODK_END_IF_000000000000004:
+
+(** end_if; **)
+			(* if - End *) 
+			ODK_END_IF_000000000000003:
+
+(** end_if; **)
+		(* if - End *) 
+		ODK_END_IF_000000000000002:
+
+		JMP ODK_END_IF_000000000000001
+
+(** end_if; **)
+	(* if - End *) 
+	ODK_SKIP_000000000000001_000000000000001:
+	ODK_END_IF_000000000000001:
+
+(**  **)
+(**  **)
+END_FUNCTION_BLOCK

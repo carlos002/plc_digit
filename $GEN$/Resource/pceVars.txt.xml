@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\$GEN$\Resource\Resource.PCD">
+	<XMLVarListGenerator version="6.2.0"/>
+	<VarList>
+		<var name="PERIOD" path="MAIN_LD" type="12" size="4" program="1" segment="10" offset="26" bit="0" scope="4" qualifier="1" ref="0" procimg="noPI" />
+		<var name="FF_J" path="MAIN_LD" type="1" size="1" program="1" segment="1" offset="6" bit="0" scope="1" qualifier="0" ref="0" procimg="%I0.0" />
+		<var name="FF_K" path="MAIN_LD" type="1" size="1" program="1" segment="1" offset="6" bit="1" scope="1" qualifier="0" ref="0" procimg="%I0.1" />
+		<var name="FF_Q" path="MAIN_LD" type="1" size="1" program="1" segment="1" offset="14" bit="0" scope="1" qualifier="0" ref="0" procimg="%Q0.0" />
+		<var name="CLOCK" path="MAIN_LD" type="1" size="1" program="1" segment="10" offset="30" bit="0" scope="4" qualifier="0" ref="0" procimg="noPI" />
+		<var name="_LDBOOL_1" path="MAIN_LD" type="1" size="1" program="1" segment="10" offset="31" bit="0" scope="4" qualifier="0" ref="0" procimg="noPI" />
+		<var name="MY_FF_J" path="MAIN_LD.MY_FF" type="1" size="1" program="1" segment="13" offset="7" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+		<var name="MY_FF_K" path="MAIN_LD.MY_FF" type="1" size="1" program="1" segment="13" offset="8" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+		<var name="MY_CLK" path="MAIN_LD.MY_FF" type="1" size="1" program="1" segment="13" offset="9" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+		<var name="MY_FF_Q" path="MAIN_LD.MY_FF" type="1" size="1" program="1" segment="13" offset="6" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+		<var name="PERIOD" path="MAIN_LD.MY_TIMER" type="12" size="4" program="1" segment="16" offset="7" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+		<var name="OUTPUT" path="MAIN_LD.MY_TIMER" type="1" size="1" program="1" segment="16" offset="6" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+		<var name="IN" path="MAIN_LD.MY_TIMER.CLOCK" type="1" size="1" program="1" segment="19" offset="11" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+		<var name="PT" path="MAIN_LD.MY_TIMER.CLOCK" type="12" size="4" program="1" segment="19" offset="12" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+		<var name="Q" path="MAIN_LD.MY_TIMER.CLOCK" type="1" size="1" program="1" segment="19" offset="6" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+		<var name="ET" path="MAIN_LD.MY_TIMER.CLOCK" type="12" size="4" program="1" segment="19" offset="7" bit="0" scope="2" qualifier="0" ref="0" procimg="noPI" />
+	</VarList>
+</Project>

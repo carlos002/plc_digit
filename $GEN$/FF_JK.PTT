@@ -1,0 +1,16 @@
+FUNCTION_BLOCK ff_jk 
+
+
+ VAR_INPUT
+  my_ff_j : bool ;
+  my_ff_k : bool ;
+  my_clk : bool r_edge ;
+  END_VAR 
+
+ VAR_OUTPUT
+  my_ff_q : bool ;
+  END_VAR 
+
+
+
+END_FUNCTION_BLOCK

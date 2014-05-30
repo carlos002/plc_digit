@@ -1,0 +1,32 @@
+FUNCTION_BLOCK ff_jk
+VAR_EXTERNAL
+
+END_VAR
+
+VAR_INPUT
+my_ff_j	: bool;
+my_ff_k	: bool;
+my_clk : clk;
+END_VAR
+
+VAR_OUTPUT
+my_ff_q	: bool;
+END_VAR
+
+VAR
+
+END_VAR
+
+if (my_ff_j & my_ff_k) then
+	my_ff_q := not my_ff_q;				(* Toggle *)
+else if (not my_ff_j & my_ff_k) then
+	my_ff_q := false;					(* Reset *)
+else if (my_ff_j & not my_ff_k) then
+	my_ff_q := true;					(* Set *)
+end_if;
+end_if;
+end_if;
+
+
+
+END_FUNCTION_BLOCK

@@ -1,0 +1,14 @@
+1/10	Datasegment	1/11	32	MAIN_LD
+1/11	Codesegment	1/12	64
+1/12	Initialsegment	1/11	22
+1/13	Datasegment	1/14	12	MAIN_LD.MY_FF
+1/14	Codesegment	1/15	103
+1/15	Initialsegment	1/14	22
+1/16	Datasegment	1/17	15	MAIN_LD.MY_TIMER
+1/17	Codesegment	1/18	52
+1/18	Initialsegment	1/17	21
+1/19	Datasegment	1/20	25	MAIN_LD.MY_TIMER.CLOCK
+1/20	Codesegment	1/21	7
+1/21	Initialsegment	1/20	35
+1/22	Instancetable	--	56
+1/23	Downloadtable	--	143

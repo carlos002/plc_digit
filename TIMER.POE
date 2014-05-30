@@ -1,0 +1,59 @@
+FUNCTION_BLOCK timer
+VAR_EXTERNAL
+
+END_VAR
+
+VAR_INPUT
+period : time;
+END_VAR
+
+VAR_OUTPUT
+	output : bool;
+END_VAR
+
+VAR
+	clock : TON;
+END_VAR
+
+(*Automatically declared*)
+VAR_EXTERNAL
+END_VAR
+(**  **)
+(**  **)
+(** clock(IN := true, PT := period); **)
+	(* call - Stmt *)
+	CAL clock (
+		IN := true,
+		PT := period
+	)
+
+(**  **)
+(** if (clock.q) then **)
+	(* if - Cond *)
+	LD clock.q
+	JMPCN ODK_SKIP_000000000000001_000000000000001
+
+		(* then - Stmts *)
+
+(** 	output := not output; **)
+		(* assign - Stmt *)
+		LD output
+		NOT
+		ST output
+
+(** 	clock (in:= false); **)
+		(* call - Stmt *)
+		CAL clock (
+			IN := false
+		)
+
+		JMP ODK_END_IF_000000000000001
+
+(** end_if; **)
+	(* if - End *) 
+	ODK_SKIP_000000000000001_000000000000001:
+	ODK_END_IF_000000000000001:
+
+(**  **)
+(**  **)
+END_FUNCTION_BLOCK

@@ -1,0 +1,176 @@
+
+Program Nr: 1:
+Nr 10: Datasegment
+20 00 01 06 0B 00 0D 00 00 00 10 00 00 00 01 00 
+06 00 01 20 06 00 01 00 0E 00 E8 03 00 00 00 00 
+
+Nr 11: Codesegment
+40 00 00 06 0C 00 0D 1A 00 3C 0A 00 07 00 04 0A 
+00 0F 0A 00 06 00 34 1E 00 14 0E 00 34 1F 00 39 
+06 00 07 00 0A 1E 00 39 06 00 09 00 14 12 00 39 
+06 00 08 00 04 06 00 0F 06 00 06 00 3E 16 00 07 
+
+    IntelFormat
+      Die Parameterwerte der Funktionen
+      werden im Motorola-Format angezeigt.
+    ByteSize = 1.
+
+    6:    13  LD_NEAR_4       00 1A
+    9:    60  ST_FAR_4        00 0A  00 07
+    e:     4  CAL             00 0A
+   11:    15  LD_FAR_BIT      00 0A  00 06
+   16:    52  ST_NEAR_BIT     00 1E
+   19:    20  LD_BYREF_BIT    00 0E
+   1c:    52  ST_NEAR_BIT     00 1F
+   1f:    57  ST_FAR_BIT      00 06  00 07
+   24:    10  LD_NEAR_BIT     00 1E
+   27:    57  ST_FAR_BIT      00 06  00 09
+   2c:    20  LD_BYREF_BIT    00 12
+   2f:    57  ST_FAR_BIT      00 06  00 08
+   34:     4  CAL             00 06
+   37:    15  LD_FAR_BIT      00 06  00 06
+   3c:    62  ST_BYREF_BIT    00 16
+   3f:     7  RET            
+
+Nr 12: Initialsegment
+16 00 02 10 0B 00 00 00 00 00 14 00 06 00 00 00 
+E8 03 00 00 00 00 
+
+Nr 13: Datasegment
+0C 00 01 06 0E 00 00 00 00 00 00 00 
+
+Nr 14: Codesegment
+67 00 00 06 0F 00 0A 09 00 34 0B 00 0A 09 00 66 
+0A 00 9F 66 09 00 97 34 09 00 0A 0B 00 34 0A 00 
+0A 09 00 03 66 00 0A 07 00 66 08 00 97 03 3B 00 
+0A 06 00 FC 01 34 06 00 01 63 00 0A 07 00 FC 01 
+66 08 00 97 03 4E 00 1F 34 06 00 01 63 00 0A 07 
+00 90 0A 08 00 FC 01 91 97 03 63 00 1E 34 06 00 
+01 63 00 01 66 00 07 
+
+    IntelFormat
+      Die Parameterwerte der Funktionen
+      werden im Motorola-Format angezeigt.
+    ByteSize = 1.
+
+    6:    10  LD_NEAR_BIT     00 09
+    9:    52  ST_NEAR_BIT     00 0B
+    c:    10  LD_NEAR_BIT     00 09
+    f:   102  LDS_NEAR_BIT    00 0A
+   12:   159  XOR_BIT        
+   13:   102  LDS_NEAR_BIT    00 09
+   16:   151  AND_BIT        
+   17:    52  ST_NEAR_BIT     00 09
+   1a:    10  LD_NEAR_BIT     00 0B
+   1d:    52  ST_NEAR_BIT     00 0A
+   20:    10  LD_NEAR_BIT     00 09
+   23:     3  JMPCN           00 66
+   26:    10  LD_NEAR_BIT     00 07
+   29:   102  LDS_NEAR_BIT    00 08
+   2c:   151  AND_BIT        
+   2d:     3  JMPCN           00 3B
+   30:    10  LD_NEAR_BIT     00 06
+   33:     1  NOT_BIT        
+   35:    52  ST_NEAR_BIT     00 06
+   38:     1  JMP             00 63
+   3b:    10  LD_NEAR_BIT     00 07
+   3e:     1  NOT_BIT        
+   40:   102  LDS_NEAR_BIT    00 08
+   43:   151  AND_BIT        
+   44:     3  JMPCN           00 4E
+   47:    31  LD_CONST_FALSE 
+   48:    52  ST_NEAR_BIT     00 06
+   4b:     1  JMP             00 63
+   4e:    10  LD_NEAR_BIT     00 07
+   51:   144  PUSH_AE        
+   52:    10  LD_NEAR_BIT     00 08
+   55:     1  NOT_BIT        
+   57:   145  POP_AE         
+   58:   151  AND_BIT        
+   59:     3  JMPCN           00 63
+   5c:    30  LD_CONST_TRUE  
+   5d:    52  ST_NEAR_BIT     00 06
+   60:     1  JMP             00 63
+   63:     1  JMP             00 66
+   66:     7  RET            
+
+Nr 15: Initialsegment
+16 00 02 10 0E 00 06 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 
+
+Nr 16: Datasegment
+0F 00 01 06 11 00 00 00 00 00 00 13 00 09 00 
+
+Nr 17: Codesegment
+34 00 00 06 12 00 0D 07 00 3C 0B 00 0C 00 1E 39 
+0B 00 0B 00 04 0B 00 0F 0B 00 06 00 03 33 00 0A 
+06 00 FC 01 34 06 00 1F 39 0B 00 0B 00 04 0B 00 
+01 33 00 07 
+
+    IntelFormat
+      Die Parameterwerte der Funktionen
+      werden im Motorola-Format angezeigt.
+    ByteSize = 1.
+
+    6:    13  LD_NEAR_4       00 07
+    9:    60  ST_FAR_4        00 0B  00 0C
+    e:    30  LD_CONST_TRUE  
+    f:    57  ST_FAR_BIT      00 0B  00 0B
+   14:     4  CAL             00 0B
+   17:    15  LD_FAR_BIT      00 0B  00 06
+   1c:     3  JMPCN           00 33
+   1f:    10  LD_NEAR_BIT     00 06
+   22:     1  NOT_BIT        
+   24:    52  ST_NEAR_BIT     00 06
+   27:    31  LD_CONST_FALSE 
+   28:    57  ST_FAR_BIT      00 0B  00 0B
+   2d:     4  CAL             00 0B
+   30:     1  JMP             00 33
+   33:     7  RET            
+
+Nr 18: Initialsegment
+15 00 02 10 11 00 05 00 00 00 04 00 00 00 00 00 
+00 00 00 00 00 
+
+Nr 19: Datasegment
+19 00 01 06 14 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 
+
+Nr 20: Codesegment
+07 00 00 06 15 00 07 
+
+    IntelFormat
+      Die Parameterwerte der Funktionen
+      werden im Motorola-Format angezeigt.
+    ByteSize = 1.
+
+    6:     7  RET            
+
+Nr 21: Initialsegment
+23 00 02 10 14 00 0A 00 00 00 00 00 09 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 
+
+Nr 22: Instancetable
+38 00 14 08 00 00 04 00 06 00 0D 00 0F 00 1A 00 
+0A 00 0C 00 0D 00 00 00 10 00 00 00 01 00 06 00 
+01 20 06 00 01 00 0E 00 0A 00 10 00 12 00 13 00 
+09 00 06 00 13 00 15 00 
+
+Nr 23: Downloadtable
+8F 00 16 08 00 00 04 00 02 00 A4 01 00 00 C4 2F 
+00 00 0F 00 00 00 0E 00 00 00 05 46 46 5F 4A 4B 
+01 00 0D 00 05 00 4D 59 5F 46 46 FC 90 00 00 B0 
+5E 00 00 0C 00 0A 00 0B 00 00 00 07 4D 41 49 4E 
+5F 4C 44 AA 36 00 00 4E 7D 00 00 12 00 00 00 11 
+00 00 00 05 54 49 4D 45 52 01 00 10 00 08 00 4D 
+59 5F 54 49 4D 45 52 60 11 00 00 36 00 00 00 15 
+00 00 00 14 00 00 00 03 54 4F 4E 01 00 13 00 0E 
+00 4D 59 5F 54 49 4D 45 52 2E 43 4C 4F 43 4B 
+
+
+Program Nr: 0:
+Nr 9: SegHardwareConfig
+12 00 24 06 CD CD 08 00 08 00 00 04 06 00 0E 00 
+16 00 
+

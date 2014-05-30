@@ -1,0 +1,47 @@
+
+Building resource C:\Users\Carlos\Desktop\OpenPCS_Projects\Project_1\$ENV$\Resource\Resource.MAK.
+Executing Pre-Build-Steps:
+
+Creating dependency list(s): 
+C:\Users\Carlos\Desktop\OpenPCS_Projects\Project_1\main_ld.POE
+
+Creating include file(s): 
+C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\TIMER.POE
+
+Compiling ...
+
+Creating prototype(s): 
+C:\Users\Carlos\Desktop\OpenPCS_Projects\Project_1\main_ld.POE
+C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\TIMER.POE
+
+Creating include file(s): 
+C:\Users\Carlos\Desktop\OpenPCS_Projects\Project_1\main_ld.POE
+C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\TIMER.POE
+
+Compiling file(s): 
+C:\Users\Carlos\Desktop\OpenPCS_Projects\Project_1\main_ld.POE
+0 error(s), 0 warning(s) - C:\Users\Carlos\Desktop\OpenPCS_Projects\Project_1\main_ld.POE.
+
+C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\TIMER.POE
+0 error(s), 0 warning(s) - C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\TIMER.POE.
+
+
+Linking ...
+Linking task MAIN_LD ...
+Linking: C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\$GEN$\Resource\main_ld.OBJ.
+Linking: C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\$GEN$\Resource\FF_JK.OBJ.
+Linking: C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\$GEN$\Resource\TIMER.OBJ.
+Linking: TON.
+Linking resource: RESOURCE ...
+Linking: C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\$GEN$\Resource\$TASK00$.CRD.
+Linking: C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\$GEN$\Resource\main_ld.CRD.
+Code size in bytes: 5661.
+Number of segments: 33.
+0 error(s), 0 warning(s) - C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\$GEN$\Resource\Resource.PCD.
+
+VARTAB32: Version VarTab: 1
+VARTAB32: 0 variables added in 1 segments (47 bytes)
+Executing Post-Build-Steps:
+PADTRTPS_SIM.EXE -s "C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\$GEN$\Resource\Resource.prs" -pcd="C:\USERS\CARLOS\DESKTOP\OPENPCS_PROJECTS\PROJECT_1\$GEN$\Resource\Resource.pcd"
+Total:
+0 error(s) 0 warning(s)

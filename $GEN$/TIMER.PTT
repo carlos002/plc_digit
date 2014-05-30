@@ -1,0 +1,14 @@
+FUNCTION_BLOCK timer 
+
+
+ VAR_INPUT
+  period : time ;
+  END_VAR 
+
+ VAR_OUTPUT
+  output : bool ;
+  END_VAR 
+
+
+
+END_FUNCTION_BLOCK

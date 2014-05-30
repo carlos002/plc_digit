@@ -1,0 +1,51 @@
+<LDD_HEAD'PROGRAM'main_ld'><LDD_MAIN'IT D91088 ladder diagram'
+<ldInfo'
+Program version   : '<LD_vers'Version: X165_REL200 as of 23.01.2001, VC6.0/SP3'File'6'6'4'12514'Product'6'6'4'12514'>
+Program build date: 'Jun  7 2012, 19:32:14'
+Current date      : 'viernes, 30 de mayo de 2014, 01:16:45 a.m.'><><LdSettings'<>>
+<LogicalDataManager'<LdLogData'<><CLdLogNwList'<>{NC<><>W'12'2'1'0'1'
+'<><>`,
+NL<>{1'
+OBup--<>W'16'3'0'0'0''my_timer'timer'<>{4'
+OE-iac-EN'<>-'''<>0
+OL-i-PERIOD'<>W'17'1'1'1'1''PERIOD''<>0
+OE-oac-'<>-'''<>0
+OL-o-OUTPUT'<>W'18'1'1'1'1''CLOCK''<>0}}<>W'14'6'1'0'1'
+Double-click to edit network comment !''<><>`,
+NL<>{2'
+OA--<>W'22'7'0'0'14''''<>{2'
+OL--<>W'22'1'0'1'2''FF_J''<>0
+OBu--<>W'24'5'4'0'10''my_ff'ff_jk'<>{4'
+OE-ic-MY_FF_J'<>W'24'1'1'0'1''''<>0
+OL-i-MY_FF_K'<>W'26'1'1'1'1''FF_K''<>0
+OL-ir-MY_CLK'<>W'27'1'1'1'1''CLOCK''<>0
+OE-oc-MY_FF_Q'<>W'28'1'1'0'1''''<>0}}
+OS--<>W'29'1'4'1'2''FF_Q''<>0}<>W'20'11'1'0'1'
+Double-click to edit network comment !''<><>}
+<>
+>{SSO1'112'<CR'0'0'><>0'0.00000D'T'<>}
+<>>
+><ILLineNr02'1'24'34'45'65'><>`f
+><VarEdi'0'VAR_EXTERNAL`
+`
+END_VAR`
+`
+VAR_GLOBAL`
+`
+END_VAR`
+^`
+VAR CONSTANT ^`
+PERIOD : Time := t#1s;^`
+END_VAR^`
+`
+VAR^`
+`
+FF_J at %i0.0 : bool;^`
+FF_K at %i0.1 : bool;^`
+FF_Q at %q0.0 : bool;^`
+^`
+my_ff : ff_jk;^`
+my_timer : timer;^`
+^`
+clock : bool;`
+END_VAR'<>><>
